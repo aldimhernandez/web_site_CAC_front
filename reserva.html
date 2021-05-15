@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- HEAD -->
+
+<head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="La Cuadra. Fonda y Fábrica de Cervezas. San Antonio de Areco, Provincia de Buenos Aires, Argentina" />
+    <meta name="author" content="Domino Inc" />
+    <!-- LINKS -->
+    <!-- Componente Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/4baa81c6d0.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts Local-->
+
+    <!-- FavIcons -->
+    <link rel="shortcut icon" href="icons/favIcons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favIcons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favIcons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favIcons/favicon-16x16.png" />
+    <link rel="manifest" href="icons/favIcons/site.webmanifest" />
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Mis Estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Title: LA CUADRA -->
+    <title>LA CUADRA &#8226; Fonda & Craft Beer</title>
+</head>
+
+<body class="grid-body">
+    <!-- HEADER -->
+    <header id="header" class="header gb-header bg-black flex row jc-end">
+        <!-- NAVEGADOR -->
+        <div class="login flex as-baseline">
+            <button type="submit">Inicia Sesión</button>
+            <button type="submit">Registrate</button>
+        </div>
+        <input type="checkbox" id="menu">
+        <label for="menu">
+            <i class="fas fa-bars"></i>
+        </label>
+        <nav class="navbar flex jc-around ai-center nav-alt">
+            <!-- Logo Comercial-->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo/logo_laCuadraF6F6F6.webp" alt="Logo Comercial La Cuadra">
+                </a>
+            </div>
+            <!-- Enlaces de Navegación -->
+            <div class="enlaces flex jc-around">
+                <a href="index.html">nosotros</a>
+                <a href="pedidos.html">pedidos online</a>
+                <a href="reserva.html" class="active">reserva</a>
+                <a href="protocolo.html">protocolo</a>
+                <a href="#footer">contacto</a>
+            </div>
+            <!-- Redes Sociales -->
+            <div class="redes flex jc-around">
+                <a href="https://instagram.com/lacuadra_areco?igshid=1p2l1ilv7z5a9" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.link/snnhts" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main class="gb-main">
+        <div class="reserva-head flex jc-start ai-end">
+            <h3 class="title-reserva c-white teko text-uppercase">reserva en la cuadra</h3>
+        </div>
+        <div class="reserva-main flex jc-center ai-center">
+            <div class="formulario-reserva c-white">
+                <form action="reserva.php" method="post">
+                    <legend class="uppercase teko c-999">dejanos tus datos de reservación</legend>
+                    <div class="nombres">
+                        <div class="label">
+                            <label for="name" id="name" class="uppercase">nombre completo</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="name" id="name" placeholder="Nombres"
+                                class="w-100 m-05 p-05 c-white bg-t bb-2sw" required>
+                            <input type="text" name="lastname" id="lastename" placeholder="Apellidos"
+                                class="w-100 m-05 p-05 c-white bg-t bb-2sw" required>
+                        </div>
+                    </div>
+                    <div class="tel">
+                        <div class="label">
+                            <label for="tel" id="tel" class="uppercase">número de telefono </label>
+                        </div>
+                        <div class="inputs">
+                            <input type="tel" name="tel" id="tel" placeholder="Número de telefono"
+                                class="w-100 m-05 p-05 c-white bg-t bb-2sw" required>
+                            <input type="tel" name="tel2" id="tel2" placeholder="Número alterantivo"
+                                class="w-100 m-05 p-05 c-white bg-t bb-2sw">
+                        </div>
+                    </div>
+                    <div class="email">
+                        <div class="label">
+                            <label for="email" id="email" class="uppercase">correo electrónico</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="email" name="email" id="email" placeholder="Correo electrónico"
+                                class="w-100 m-05 p-05 c-white bg-t bb-2sw" required>
+                        </div>
+                    </div>
+                    <div class="dia">
+                        <div class="label">
+                            <label for="date" id="date" class="uppercase">día de reserva</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="date" name="date" id="date" class="w-100 m-05 p-05 c-white bg-black bb-2sw"
+                                required>
+                        </div>
+                    </div>
+                    <div class="hora">
+                        <div class="label">
+                            <label for="time" id="time" class="uppercase">horario de reserva</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="time" name="time" id="time" class="w-100 m-05 p-05 c-white bg-black bb-2sw"
+                                required>
+                        </div>
+                    </div>
+                    <div class="sector">
+                        <div class="label">
+                            <label for="sector" id="sector" class="uppercase">sector</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="radio" name="sector" id="salon" value="salon">
+                            <label for="salon" id="salon" class="uppercase c-white p-05">salon</label>
+
+                            <input type="radio" name="sector" id="patio" value="patio">
+                            <label for="patio" id="patio" class="uppercase c-white p-05">patio</label>
+
+                            <input type="radio" name="sector" id="vereda" value="vereda" checked>
+                            <label for="vereda" id="vereda" class="uppercase c-white p-05">vereda</label>
+                        </div>
+                    </div>
+                    <div class="n-invitados">
+                        <div class="label">
+                            <label for="invitados" id="invitados" class="uppercase">Número de Invitados</label>
+                        </div>
+                        <div class="inputs">
+                            <p>La cantidad máxima de invitados por mesa es 4 (cuatro). Sí usted desea reservar para mas
+                                de 4 invitados debera realizar otra reserva.</p>
+                            <select name="invitados" id="invitados" class="invitados bg-black c-white">
+                                <option value="1" class="bg-black c-white">1</option>
+                                <option value="2" class="bg-black c-white">2</option>
+                                <option value="3" class="bg-black c-white">3</option>
+                                <option value="4" class="bg-black c-white">4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="sugerencia">
+                        <div class="label">
+                            <label for="comments" id="comments" class="uppercase">Sugerencias</label>
+                        </div>
+                        <div class="inputs">
+                            <textarea name="comments" id="comments" cols="50" rows="3"
+                                class="c-white bg-t bb-2sw"></textarea>
+                        </div>
+                    </div>
+                    <div class="advertencia">
+                        <p class="uppercase p-mtop">
+                            Sí no hay reservas disponibles para la fecha y la hora seleccionadadas por favor comuniquese
+                            con nosotros al siguiente número
+                            <a href="tel:01139010244">
+                                011 3901-0244
+                                <i class="fas fa-mobile-alt c-white"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="reserva-btn">
+                        <button type="submit" class="uppercase w-100 m-05 p-05 c-white">reservar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer id="footer" class="gb-footer bg-black flex column">
+        <!-- Footer Top | Boton Subir -->
+        <div class="footer-top subir flex jc-center">
+            <a href="#header">
+                <i class="fas fa-angle-up"></i>
+            </a>
+        </div>
+        <!-- Footer Center -->
+        <div class="footer-center flex jc-around ai-center">
+            <div class="iframe flex jc-center ai-stretch">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13192.983808091014!2d-59.472231099999995!3d-34.2422672!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e3a7218bfd20db4!2sLa%20cuadra!5e0!3m2!1ses!2sar!4v1619927021496!5m2!1ses!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="datos">
+                <div class="flex jc-center">
+                    <h6 class="title fs-1-2 c-white">encontranos en</h6>
+                </div>
+                <div class="flex jc-between">
+                    <i class="fas fa-map-marker-alt c-white"></i>
+                    <span class="direccion c-white">
+                        Zapiola 76,
+                        <span class="text c-999">San Antonio de Areco, Provincia de Buenos Aires,
+                            Argentina</span>
+                    </span>
+                </div>
+                <div class="flex jc-between">
+                    <i class="fas fa-mobile-alt c-white"></i>
+                    <a href="tel:01139010244" class="c-999">011 3901-0244</a>
+                </div>
+                <div class="flex jc-between">
+                    <i class="far fa-envelope icon c-white"></i>
+                    <a href="mailto:info@lacuadrareco.com" class="c-999">info@lacuadrareco.com</a>
+                </div>
+                <div class="flex jc-around sociales">
+                    <a href="https://instagram.com/lacuadra_areco?igshid=1p2l1ilv7z5a9" target="_blank">
+                        <i class="fab fa-instagram c-999"></i>
+                    </a>
+                    <a href="https://wa.link/snnhts" target="_blank">
+                        <i class="fab fa-whatsapp c-999"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="suscripcion">
+                <div class="flex column jc-center ai-center">
+                    <h6 class="title fs-1-2 c-white">suscripción</h6>
+                    <p class="parrafo c-999">Recibí novedades y promociones</p>
+                </div>
+                <form action="form.php" method="POST" class="flex column jc-center ai-center">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre*"
+                        class="w-100 m-05 p-05 c-white bg-t bb-2sw" required>
+                    <input type="email" name="email" id="email" placeholder="Correo electronico*"
+                        class="w-100 m-05 p-05 c-white bg-t bb-2sw" required>
+                    <button type="submit" class="c-white w-100 m-05 p-05">Suscribite</button>
+                </form>
+            </div>
+        </div>
+        <!-- Footer Bottom | Copyright-->
+        <div class="footer-bottom flex jc-center ai-end">
+            <span class="copyright c-white">&#169; 2021. Created by</span>
+            <a href="https://github.com/aldimhernandez" target="_blank">Domino Inc Solutions</a>
+        </div>
+    </footer>
+    <!-- BOOTSTRAP JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

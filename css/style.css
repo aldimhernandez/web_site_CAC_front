@@ -1,0 +1,838 @@
+/* ESTILOS GENERALES */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 98.7vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+@font-face {
+    font-family: Teko;
+    src: url(../fonts/Teko/Teko-Light.ttf);
+}
+
+.teko {
+    font-family: Teko;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+a,
+button {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover,
+.active {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.c-white {
+    color: #FFF;
+}
+
+.c-999 {
+    color: #999;
+}
+
+.bb-2sw {
+    border-bottom: 2px solid #FFF;
+}
+
+.bg-black-05 {
+    background-color: rgba(248, 242, 242, 0.363);
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.bg-t {
+    background-color: transparent;
+}
+
+.fs-1-2 {
+    font-size: 1.2rem;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.m-05 {
+    margin: 0.5rem;
+}
+
+.p-05 {
+    padding: 0.5rem;
+}
+
+/* GRID */
+/* 1-Grid Body */
+.grid-body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+.gb-header {
+    grid-area: header;
+    width: 100%;
+    min-height: 30vh;
+}
+
+.gb-main {
+    grid-area: main;
+    background-color: #FFF;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+
+.gb-footer {
+    grid-area: footer;
+    width: 100%;
+    min-height: 60vh;
+}
+
+/* FLEXBOX */
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-flow: wrap;
+}
+
+.jc-baseline {
+    justify-content: baseline;
+}
+
+.jc-start {
+    justify-content: flex-start;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-around {
+    justify-content: space-around;
+}
+
+.jc-end {
+    justify-content: flex-end;
+}
+
+.jc-between {
+    justify-content: space-between;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.ai-stretch {
+    align-items: stretch;
+}
+
+.ai-end {
+    align-items: flex-end;
+}
+
+.as-start {
+    align-self: flex-start;
+}
+
+.as-baseline {
+    align-self: baseline;
+}
+
+.as-center {
+    align-self: center;
+}
+
+.as-end {
+    align-self: flex-end;
+}
+
+/* HEADER */
+.header {
+    color: #999;
+    margin: 0;
+    position: relative;
+}
+
+.login button {
+    margin: 1rem 1rem 0 0;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #111;
+    z-index: 2;
+}
+
+.login button:hover {
+    color: #FFF;
+    background-color: #222;
+}
+
+.login button:active {
+    background-color: rgb(19, 4, 1);
+}
+
+/* 1-Navbar */
+.header label {
+    display: none;
+}
+
+.navbar {
+    /* width: 100%; */
+    padding: 2.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    z-index: 1;
+}
+
+#menu {
+    display: none;
+}
+
+.header label:hover {
+    cursor: pointer;
+}
+
+.nav-alt {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+nav div {
+    margin: 0 1rem;
+}
+
+/* a.Logo Comercial*/
+.logo {
+    max-width: 10%;
+    flex-grow: 1;
+    margin-left: 2.5%;
+    /* background-color: lightcoral; */
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* b.Enlaces de Navegación */
+.enlaces {
+    margin: 0;
+    flex-grow: 2;
+}
+
+/* c.Redes Sociales */
+.redes {
+    max-width: 10%;
+    flex-grow: 1;
+}
+
+/* MAIN */
+/* MAIN = INDEX - NOSOTROS */
+/* MAIN = PEDIDOS */
+.pedidos-head {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    background-image: url(../img/webp/pedidos-head/textura-madera.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 0;
+}
+
+.animate-title {
+    font-size: 8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    animation-duration: 2s;
+}
+
+.animate-title span {
+    margin: 1rem;
+}
+
+.p-info-detalle {
+    width: 70%;
+}
+
+.p-info-detalle h4,
+.p-info-detalle h5,
+.p-info-detalle p {
+    margin: 0;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.p-info-detalle p {
+    font-size: 1.8rem;
+}
+
+.p-info-detalle p:hover {
+    color: #FFF;
+    background-color: #000;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.seccion h5 {
+    width: 100%;
+    color: #FFF;
+    padding: 1rem;
+    font-size: 3rem;
+    letter-spacing: 0.12rem;
+    background-color: rgb(15, 1, 1);
+    text-transform: uppercase;
+}
+
+.cards {
+    width: 20%;
+    min-width: 15rem;
+    display: grid;
+    grid-template-areas:
+        "card-head"
+        "card-main"
+        "card-foot";
+    margin: 2rem;
+    border-radius: 1rem;
+    background-color: #FFF;
+    box-shadow: 0.5rem 0.5rem 1rem #333;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0.5rem 0.5rem 1rem rgb(7, 1, 46);
+}
+
+.card-head {
+    grid-area: card-head;
+    height: 10rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-main {
+    grid-area: card-main;
+    height: 9rem;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.card-main h6 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.card-foot {
+    grid-area: card-foot;
+    height: 4.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: #FFF;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: rgb(42, 3, 3);
+}
+
+.tiempo {
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.min {
+    font-size: 0.9rem;
+}
+
+.top {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Aca necesitaria usar un ciclo for de JS */
+.card1 .card-head {
+    background-image: url(../img/webp/cards/wok-verduras-pollo.jpg);
+}
+
+.card2 .card-head {
+    background-image: url(../img/webp/cards/pollo-curry-arroz.jpg);
+}
+
+.card3 .card-head {
+    background-image: url(../img/webp/cards/provoleta.jpg);
+}
+
+.card4 .card-head {
+    background-image: url(../img/webp/carta/tablita-campera.webp);
+}
+
+.card5 .card-head {
+    background-image: url(../img/webp/carta/nuggets-pollo-salsa-redi.webp);
+}
+
+.card6 .card-head {
+    background-image: url(../img/webp/carta/papas-fritas-dupla-redi.webp);
+}
+
+/* MAIN = RESERVA */
+.reserva-head {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../img/webp/lugar/barra-redi.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.title-reserva {
+    margin: 0;
+    width: 100%;
+    background-color: rgba(15, 6, 6, 0.9);
+    padding: 1rem 0 0 2rem;
+    font-size: 4rem;
+}
+
+.reserva-main {
+    background-color: rgb(15, 1, 1);
+}
+
+.formulario-reserva {
+    width: 60%;
+    height: auto;
+    margin: 2rem 0;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+legend {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.label {
+    margin-top: 2rem;
+}
+
+input[type="radio"] {
+    width: initial;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    font-size: 1.3rem;
+}
+
+.invitados {
+    width: 50%;
+}
+
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.p-mtop {
+    margin-top: 1rem;
+}
+
+/* MAIN = PROTOCOLO */
+
+/* FOOTER */
+.gb-footer {
+    height: 60vh;
+}
+
+/* 1-FOOTER-top */
+/* a-Subir (icono-enlace) */
+.subir {
+    font-size: 2rem;
+    /* background-color: rgb(37, 37, 7); */
+}
+
+/* 2-FOOTER-center */
+.footer-center {
+    width: 100%;
+    height: 59vh;
+    margin: 0;
+}
+
+.iframe,
+.datos,
+.suscripcion {
+    width: 22%;
+    min-width: 20rem;
+    min-height: 18rem;
+}
+
+.title {
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+/* a-Iframe */
+.iframe iframe {
+    width: 100%;
+    min-height: 18rem;
+    height: 100%;
+}
+
+/* b-Datos */
+.datos div {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.direccion {
+    width: 90%;
+    text-align: right;
+}
+
+/* c-Suscripción */
+.suscripcion div {
+    margin: 1rem 0 0 0;
+}
+
+.parrafo {
+    margin: 0;
+}
+
+textarea,
+select,
+select:focus,
+form input,
+form button {
+    border: none;
+    outline: none;
+}
+
+
+form button {
+    border-radius: 1rem;
+    letter-spacing: 0.2rem;
+    background-color: #111;
+    text-transform: uppercase;
+}
+
+form button:hover {
+    background-color: #222;
+}
+
+form button:active {
+    background-color: rgb(19, 4, 1);
+}
+
+/* 3-FOOTER-bottom */
+.footer-bottom {
+    font-size: 0.8rem;
+    padding: 1rem 0;
+}
+
+/* a-Copyright */
+.copyright {
+    margin-right: 0.5rem;
+}
+
+/* MEDIA QUERYS */
+@media (max-width: 640px) {
+    /* Header */
+    .header {
+        width: 100%;
+        justify-content: flex-start;
+        /* background-color: darksalmon; */
+    }
+
+    .login {
+        margin-left: auto;
+        z-index: 2;
+    }
+
+    /* Navegación */
+    .header label {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        display: block;
+        color: #FFF;
+        font-size: 3rem;
+        padding-left: 1.5rem;
+        cursor: pointer;
+        z-index: 1;
+        background-color: rgba(0,0,0);
+    }
+
+    .navbar {
+        position: fixed;
+        top: 4rem;
+        padding: 0 1rem;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: rgba(19, 1, 1, 0.7);
+        z-index: 3;
+        margin-left: -100%;
+        transition: all 0.7s;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .enlaces {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .enlaces a {
+        margin: 0 1rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid #FFF;
+    }
+
+    .enlaces a:last-child {
+        border: none;
+    }
+
+    #menu:checked~.navbar {
+        margin: 0;
+    }
+
+    .redes {
+        display: none;
+    }
+
+    /* main - pedidos */
+    .animate-title {
+        font-size: 5rem;
+    }
+
+    .animate-title span {
+        margin: 0 1rem;
+        line-height: 1;
+    }
+
+    .p-info-detalle {
+        width: 100%;
+    }
+
+    .p-info-detalle h4,
+    .p-info-detalle h5,
+    .p-info-detalle p {
+        font-size: 1.3rem;
+    }
+
+    .p-info-detalle p {
+        font-size: 1rem;
+    }
+
+    .seccion h5 {
+        font-size: 2rem;
+    }
+
+    /* main - reserva */
+    .formulario-reserva {
+        width: 90%;
+    }
+
+    /* footer */
+    .gb-footer {
+        height: auto;
+    }
+
+    .footer-center {
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .iframe,
+    .datos,
+    .suscripcion {
+        width: 70%;
+        height: 90%;
+        margin: 1rem;
+    }
+    .sociales {
+        justify-content: center;
+    }
+    .sociales a {
+        padding: 0 2rem;
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+    .datos,
+    .suscripcion {
+        font-size: 1rem;
+    }
+    .title {
+        margin: 0;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .suscripcion button {
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1280px) {
+    /* Header */
+    .header {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .login {
+        margin-left: auto;
+        z-index: 3;
+    }
+
+    /* Navegación */
+    .header label {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        display: block;
+        color: #FFF;
+        font-size: 3rem;
+        padding-left: 1.5rem;
+        cursor: pointer;
+        z-index: 2;
+        background-color: rgba(0,0,0);
+    }
+
+    .navbar {
+        position: fixed;
+        top: 4rem;
+        padding: 0 1rem;
+        width: 70%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: rgba(19, 1, 1, 0.7);
+        z-index: 1;
+        margin-left: -70%;
+        transition: all 0.7s;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .enlaces {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .enlaces a {
+        margin: 0 1rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid #FFF;
+    }
+
+    .enlaces a:last-child {
+        border: none;
+    }
+
+    #menu:checked~.navbar {
+        margin: 0;
+    }
+
+    .redes {
+        display: none;
+    }
+    /* Footer */
+    .gb-footer {
+        height: auto;
+    }
+
+    .footer-center {
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .iframe,
+    .datos,
+    .suscripcion {
+        width: 70%;
+        height: 90%;
+        margin: 1rem;
+    }
+    .sociales {
+        justify-content: center;
+    }
+    .sociales a {
+        padding: 0 2rem;
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+    .datos,
+    .suscripcion {
+        font-size: 1rem;
+    }
+    .title {
+        margin: 0;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .suscripcion button {
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 1280px) {}

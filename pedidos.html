@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- HEAD -->
+
+<head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="La Cuadra. Fonda y Fábrica de Cervezas. San Antonio de Areco, Provincia de Buenos Aires, Argentina" />
+    <meta name="author" content="Domino Inc" />
+    <!-- LINKS -->
+    <!-- Componente Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Animate.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/4baa81c6d0.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts Local-->
+
+    <!-- FavIcons -->
+    <link rel="shortcut icon" href="icons/favIcons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favIcons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favIcons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favIcons/favicon-16x16.png" />
+    <link rel="manifest" href="icons/favIcons/site.webmanifest" />
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Mis Estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Title: LA CUADRA -->
+    <title>LA CUADRA &#8226; Fonda & Craft Beer</title>
+</head>
+
+<body class="grid-body">
+    <!-- HEADER -->
+    <header id="header" class="header gb-header bg-black flex row jc-end">
+        <!-- NAVEGADOR -->
+        <div class="login flex as-baseline">
+          <button type="submit">Inicia Sesión</button>
+          <button type="submit">Registrate</button>
+        </div>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <i class="fas fa-bars"></i>
+        </label>
+        <nav class="navbar flex jc-around ai-center nav-alt">
+          <!-- Logo Comercial-->
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="logo/logo_laCuadraF6F6F6.webp"
+                alt="Logo Comercial La Cuadra"
+              />
+            </a>
+          </div>
+          <!-- Enlaces de Navegación -->
+          <div class="enlaces flex jc-around">
+            <a href="index.html">nosotros</a>
+            <a href="pedidos.html" class="active">pedidos online</a>
+            <a href="reserva.html">reserva</a>
+            <a href="protocolo.html">protocolo</a>
+            <a href="#footer">contacto</a>
+          </div>
+          <!-- Redes Sociales -->
+          <div class="redes flex jc-around">
+            <a
+              href="https://instagram.com/lacuadra_areco?igshid=1p2l1ilv7z5a9"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.link/snnhts" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </nav>
+      </header>
+    <!-- MAIN -->
+    <main class="gb-main">
+        <div class="pedidos">
+            <div class="pedidos-head">
+                <div class="pedidos-info flex column jc-center ai-center">
+                    <div class="animate-title flex jc-center wrap">
+                        <span class="animate__animated animate__slideInLeft teko">delivery</span>
+                        <span class="animate__animated animate__slideInDown teko">&</span>
+                        <span class="animate__animated animate__slideInRight teko">take away</span>
+                    </div>
+                    <div class="p-info-detalle flex column jc-center ai-center">
+                        <h4>El tiempo de entrega y el costo de envio pueden variar dependiendo de tu selección final.
+                        </h4>
+                        <h5>¿Tenes dudas?</h5>
+                        <p class="w-60">
+                            <a href="tel:01139010244" class="c-black pedidos-hover">
+                               Comunicate al 011 3901-0244
+                                <i class="fas fa-mobile-alt c-black"></i>
+                            </a>
+                        </p>
+                        <p class="w-60">
+                            <a href="https://wa.link/snnhts" target="_blank">
+                               Envianos un WhatsApp
+                                <i class="fab fa-whatsapp pedidos-hover"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pedidos-main flex wrap">
+                <!-- <div class="detalle-envio">
+                    <div class="envio">
+                        envio
+                    </div>
+                    <div class="carrito">
+                        carrito
+                    </div>
+                </div> -->
+                <section class="seccion flex column jc-center ai-center wrap">
+                    <h5 class="teko">Recomendaciones del Chef</h5>
+                    <div class="flex jc-center ai-center wrap">
+                        <div class="cards card1">
+                            <div class="card-head">
+                            </div>
+                            <div class="card-main flex column jc-baseline">
+                                <h6>Wok de Verduras y Pollo</h6>
+                                <p>Arroz salteado con verduras, pollo, aceite de sesamo y semillas de sesamo</p>
+                            </div>
+                            <div class="card-foot">
+                                <div class="valoracion flex column jc-center ai-center">
+                                    <div class="top">5.0</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="tiempo flex column jc-center ai-center">
+                                    <div class="top">
+                                        35 <span class="min">min</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                </div>
+                                <div class="precio flex column jc-center ai-center">
+                                    <div class="top">$450</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-coins"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards card2">
+                            <div class="card-head">
+                            </div>
+                            <div class="card-main flex column jc-baseline ai-center">
+                                <h6>Pollo al Curry</h6>
+                                <p>Arroz salteado con verduras, pollo, aceite de sesamo y semillas de sesamo</p>
+                            </div>
+                            <div class="card-foot">
+                                <div class="valoracion flex column jc-center ai-center">
+                                    <div class="top">5.0</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="tiempo flex column jc-center ai-center">
+                                    <div class="top">
+                                        45 <span class="min">min</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                </div>
+                                <div class="precio flex column jc-center ai-center">
+                                    <div class="top">$450</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-coins"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards card3">
+                            <div class="card-head">
+                            </div>
+                            <div class="card-main flex column jc-baseline ai-center">
+                                <h6>Provoleta Grill</h6>
+                                <p>Provoleta grillada con jamon crudo, cebolla caramelizada y verdeo</p>
+                            </div>
+                            <div class="card-foot">
+                                <div class="valoracion flex column jc-center ai-center">
+                                    <div class="top">5.0</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="tiempo flex column jc-center ai-center">
+                                    <div class="top">
+                                        30 <span class="min">min</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                </div>
+                                <div class="precio flex column jc-center ai-center">
+                                    <div class="top">$390</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-coins"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="seccion flex column jc-center ai-center">
+                    <h5 class="teko">Entradas y Tapas</h5>
+                    <div class="flex jc-center ai-center wrap">
+                        <div class="cards card3">
+                            <div class="card-head">
+                            </div>
+                            <div class="card-main flex column jc-baseline ai-center">
+                                <h6>Provoleta Grill</h6>
+                                <p>Provoleta grillada con jamon crudo, cebolla caramelizada y verdeo</p>
+                            </div>
+                            <div class="card-foot">
+                                <div class="valoracion flex column jc-center ai-center">
+                                    <div class="top">5.0</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="tiempo flex column jc-center ai-center">
+                                    <div class="top">
+                                        30 <span class="min">min</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                </div>
+                                <div class="precio flex column jc-center ai-center">
+                                    <div class="top">$390</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-coins"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards card4">
+                            <div class="card-head">
+                            </div>
+                            <div class="card-main flex column jc-baseline">
+                                <h6>Tablita campera</h6>
+                                <p>Salame picado grueso, queso a elección, pan o galleta de campo</p>
+                            </div>
+                            <div class="card-foot">
+                                <div class="valoracion flex column jc-center ai-center">
+                                    <div class="top">4.0</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="tiempo flex column jc-center ai-center">
+                                    <div class="top">
+                                        20 <span class="min">min</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                </div>
+                                <div class="precio flex column jc-center ai-center">
+                                    <div class="top">$400</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-coins"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards card5">
+                            <div class="card-head">
+                            </div>
+                            <div class="card-main flex column jc-baseline ai-center">
+                                <h6>Nuggets de Pollo</h6>
+                                <p>Nuggets de pollo fritas con salsa de la casa</p>
+                            </div>
+                            <div class="card-foot">
+                                <div class="valoracion flex column jc-center ai-center">
+                                    <div class="top">3.5</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="tiempo flex column jc-center ai-center">
+                                    <div class="top">
+                                        30 <span class="min">min</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                </div>
+                                <div class="precio flex column jc-center ai-center">
+                                    <div class="top">$450</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-coins"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards card6">
+                            <div class="card-head">
+                            </div>
+                            <div class="card-main flex column jc-baseline ai-center">
+                                <h6>Papas Rústicas</h6>
+                                <p>Papas Rústicas con queso cheddar</p>
+                            </div>
+                            <div class="card-foot">
+                                <div class="valoracion flex column jc-center ai-center">
+                                    <div class="top">4.5</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="tiempo flex column jc-center ai-center">
+                                    <div class="top">
+                                        35 <span class="min">min</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                </div>
+                                <div class="precio flex column jc-center ai-center">
+                                    <div class="top">$390</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-coins"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="seccion flex column jc-center ai-center">
+                    <h5 class="teko">Platos Principales</h5>
+                    <div class="flex jc-center ai-center wrap">
+                        <div class="cards card7">
+                            <div class="card-head">
+                            </div>
+                            <div class="card-main flex column jc-baseline">
+                                <h6>Wok de Verduras y Pollo</h6>
+                                <p>Arroz salteado con verduras, pollo, aceite de sesamo y semillas de sesamo</p>
+                            </div>
+                            <div class="card-foot">
+                                <div class="valoracion flex column jc-center ai-center">
+                                    <div class="top">5.0</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="tiempo flex column jc-center ai-center">
+                                    <div class="top">
+                                        35 <span class="min">min</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                </div>
+                                <div class="precio flex column jc-center ai-center">
+                                    <div class="top">$450</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-coins"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards card8">
+                            <div class="card-head">
+                            </div>
+                            <div class="card-main flex column jc-baseline ai-center">
+                                <h6>Pollo al Curry</h6>
+                                <p>Arroz salteado con verduras, pollo, aceite de sesamo y semillas de sesamo</p>
+                            </div>
+                            <div class="card-foot">
+                                <div class="valoracion flex column jc-center ai-center">
+                                    <div class="top">5.0</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="tiempo flex column jc-center ai-center">
+                                    <div class="top">
+                                        45 <span class="min">min</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                </div>
+                                <div class="precio flex column jc-center ai-center">
+                                    <div class="top">$450</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-coins"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards card9">
+                            <div class="card-head">
+                            </div>
+                            <div class="card-main flex column jc-baseline ai-center">
+                                <h6>Provoleta Grill</h6>
+                                <p>Provoleta grillada con jamon crudo, cebolla caramelizada y verdeo</p>
+                            </div>
+                            <div class="card-foot">
+                                <div class="valoracion flex column jc-center ai-center">
+                                    <div class="top">5.0</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="tiempo flex column jc-center ai-center">
+                                    <div class="top">
+                                        30 <span class="min">min</span>
+                                    </div>
+                                    <div class="bottom">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                </div>
+                                <div class="precio flex column jc-center ai-center">
+                                    <div class="top">$390</div>
+                                    <div class="bottom">
+                                        <i class="fas fa-coins"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer id="footer" class="gb-footer bg-black flex column">
+        <!-- Footer Top | Boton Subir -->
+        <div class="footer-top subir flex jc-center">
+            <a href="#header">
+                <i class="fas fa-angle-up"></i>
+            </a>
+        </div>
+        <!-- Footer Center -->
+        <div class="footer-center flex row jc-around ai-center">
+            <div class="iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13192.983808091014!2d-59.472231099999995!3d-34.2422672!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e3a7218bfd20db4!2sLa%20cuadra!5e0!3m2!1ses!2sar!4v1619927021496!5m2!1ses!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="datos">
+                <div class="flex jc-center">
+                    <h6 class="title fs-1-2 c-white">encontranos en</h6>
+                </div>
+                <div class="flex jc-between">
+                    <i class="fas fa-map-marker-alt c-white"></i>
+                    <span class="direccion c-white">
+                        Zapiola 76,
+                        <span class="text c-999">San Antonio de Areco, Provincia de Buenos Aires,
+                            Argentina</span>
+                    </span>
+                </div>
+                <div class="flex jc-between">
+                    <i class="fas fa-mobile-alt c-white"></i>
+                    <a href="tel:01139010244" class="c-999">011 3901-0244</a>
+                </div>
+                <div class="flex jc-between">
+                    <i class="far fa-envelope icon c-white"></i>
+                    <a href="mailto:info@lacuadrareco.com" class="c-999">info@lacuadrareco.com</a>
+                </div>
+                <div class="flex jc-around">
+                    <a href="https://instagram.com/lacuadra_areco?igshid=1p2l1ilv7z5a9" target="_blank">
+                        <i class="fab fa-instagram c-999"></i>
+                    </a>
+                    <a href="https://wa.link/snnhts" target="_blank">
+                        <i class="fab fa-whatsapp c-999"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="suscripcion">
+                <div class="flex column jc-center ai-center">
+                    <h6 class="title fs-1-2 c-white">suscripción</h6>
+                    <p class="parrafo c-999">Recibí novedades y promociones</p>
+                </div>
+                <form action="form.php" method="POST" class="flex column jc-center ai-center">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre*" class="w-100 m-05 p-05 c-white bg-t bb-2sw" required>
+                    <input type="email" name="email" id="email" placeholder="Correo electronico*" class="w-100 m-05 p-05 c-white bg-t bb-2sw" required>
+                    <button type="submit" class="c-white w-100 m-05 p-05">Suscribite</button>
+                </form>
+            </div>
+        </div>
+        <!-- Footer Bottom | Copyright-->
+        <div class="footer-bottom flex jc-center ai-end">
+            <span class="copyright c-white">&#169; 2021. Created by</span>
+            <a href="https://github.com/aldimhernandez" target="_blank">Domino Inc Solutions</a>
+        </div>
+    </footer>
+    <!-- BOOTSTRAP JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
