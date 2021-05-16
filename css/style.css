@@ -13,7 +13,9 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
 }
-
+.z-index-0 {
+    z-index: 0;
+}
 @font-face {
     font-family: Teko;
     src: url(../fonts/Teko/Teko-Light.ttf);
@@ -66,15 +68,42 @@ a:hover,
 .fs-1-2 {
     font-size: 1.2rem;
 }
-
+.fs-1-5 {
+    font-size: 1.5rem;
+}
+.fs-2 {
+    font-size: 2rem;
+}
+.fs-3 {
+    font-size: 3rem;
+}
+.w-50 {
+    width: 50%;
+}
 .w-60 {
     width: 60%;
 }
-
+.w-80 {
+    width: 80%;
+}
 .w-100 {
     width: 100%;
 }
-
+.h-auto {
+    height: auto;
+}
+.h-60vh {
+    height: 60vh;
+}
+.h-70vh {
+    height: 70vh;
+}
+.h-20 {
+    height: 20%;
+}
+.m-0 {
+    margin: 0;
+}
 .m-05 {
     margin: 0.5rem;
 }
@@ -128,10 +157,6 @@ a:hover,
 
 .wrap {
     flex-flow: wrap;
-}
-
-.jc-baseline {
-    justify-content: baseline;
 }
 
 .jc-start {
@@ -243,6 +268,7 @@ nav div {
     max-width: 10%;
     flex-grow: 1;
     margin-left: 2.5%;
+    z-index: 2;
     /* background-color: lightcoral; */
 }
 
@@ -264,6 +290,23 @@ nav div {
 }
 
 /* MAIN */
+/* MAIN LOGIN */
+.contenedor-login {
+    width: 100%;
+    height: auto;
+    /* min-height: 100vh; */
+    position: fixed;
+    top: 20vh;
+    z-index: 1;
+}
+.login-form {
+    width: 50%;
+    background-color: #111;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0) ;
+}
+/* MAIN SIGN UP */
+
 /* MAIN = INDEX - NOSOTROS */
 /* MAIN = PEDIDOS */
 .pedidos-head {
@@ -291,7 +334,7 @@ nav div {
 }
 
 .p-info-detalle {
-    width: 70%;
+    width: 60%;
 }
 
 .p-info-detalle h4,
@@ -310,7 +353,7 @@ nav div {
 
 .p-info-detalle p:hover {
     color: #FFF;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 3rem;
     cursor: pointer;
 }
@@ -345,7 +388,7 @@ nav div {
 
 .cards:hover {
     transform: scale(1.05);
-    box-shadow: 0.5rem 0.5rem 1rem rgb(7, 1, 46);
+    box-shadow: 0.6rem 0.6rem 1rem rgb(32, 1, 1);
 }
 
 .card-head {
@@ -470,6 +513,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 input[type="time"]::-webkit-calendar-picker-indicator {
     font-size: 1.3rem;
 }
+input[type="date"]::-webkit-calendar-picker-indicator:hover,
+input[type="time"]::-webkit-calendar-picker-indicator:hover {
+    cursor: pointer;
+}
 
 .invitados {
     width: 50%;
@@ -575,7 +622,9 @@ form button:active {
 /* 3-FOOTER-bottom */
 .footer-bottom {
     font-size: 0.8rem;
-    padding: 1rem 0;
+    padding: 2rem 0;
+    color: rgb(206, 205, 205);
+    background-color: #000;
 }
 
 /* a-Copyright */
