@@ -13,9 +13,11 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
 }
+
 .z-index-0 {
     z-index: 0;
 }
+
 @font-face {
     font-family: Teko;
     src: url(../fonts/Teko/Teko-Light.ttf);
@@ -68,42 +70,59 @@ a:hover,
 .fs-1-2 {
     font-size: 1.2rem;
 }
+
 .fs-1-5 {
     font-size: 1.5rem;
 }
+
 .fs-2 {
     font-size: 2rem;
 }
+
 .fs-3 {
     font-size: 3rem;
 }
+
 .w-50 {
     width: 50%;
 }
+
 .w-60 {
     width: 60%;
 }
+
 .w-80 {
     width: 80%;
 }
+
 .w-100 {
     width: 100%;
 }
+
 .h-auto {
     height: auto;
 }
+
 .h-60vh {
     height: 60vh;
 }
+
 .h-70vh {
     height: 70vh;
 }
+
+.h-80vh {
+    height: 80vh;
+}
+
 .h-20 {
     height: 20%;
 }
+
 .m-0 {
     margin: 0;
 }
+
 .m-05 {
     margin: 0.5rem;
 }
@@ -130,7 +149,6 @@ a:hover,
 
 .gb-main {
     grid-area: main;
-    background-color: #FFF;
     width: 100%;
     height: auto;
     min-height: 100vh;
@@ -290,24 +308,256 @@ nav div {
 }
 
 /* MAIN */
-/* MAIN LOGIN */
+/* MAIN LOGIN + SIGN UP*/
+
+.login-img-bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/webp/lugar/patio01.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.signup-img-bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/webp/lugar/puerta.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
 .contenedor-login {
     width: 100%;
+    max-height: 100vh;
     height: auto;
-    /* min-height: 100vh; */
     position: fixed;
     top: 20vh;
     z-index: 1;
 }
+.contenedor-protocolo {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    height: auto;
+    position: absolute;
+    top: 30vh;
+}
+
+.protocolo-form,
+.signup-form,
 .login-form {
     width: 50%;
-    background-color: #111;
+    background-color: rgba(0, 0, 0, 0.95);
     border-radius: 1rem;
-    box-shadow: 5px 5px 20px rgb(0, 0, 0) ;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
 }
-/* MAIN SIGN UP */
+
+.protocolo-form {
+    padding: 2rem 0;
+    background-color: rgba(32, 2, 2, 0.95);
+}
 
 /* MAIN = INDEX - NOSOTROS */
+img {
+    max-width: 100%;
+}
+
+.container-slide {
+    position: relative;
+    max-width: 70rem;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.6s;
+    animation-name: autoplay;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.item-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.slider-nav {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.item-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #111;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.item-nav:hover {
+    transform: scale(2);
+}
+
+.item-nav img {
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.item-nav:hover img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+input[id="1"]:checked~.slide {
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked~.slider-nav .item-nav[for="1"] {
+    background: rgb(29, 1, 1);
+}
+
+input[id="2"]:checked~.slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="2"]:checked~.slider-nav .item-nav[for="2"] {
+    background: rgb(29, 1, 1);
+}
+
+
+input[id="3"]:checked~.slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="3"]:checked~.slider-nav .item-nav[for="3"] {
+    background: rgb(29, 1, 1);
+}
+
+input[id="4"]:checked~.slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 3), 0, 0);
+}
+
+input[id="4"]:checked~.slider-nav .item-nav[for="4"] {
+    background: rgb(29, 1, 1);
+}
+
+input[id="5"]:checked~.slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 4), 0, 0);
+}
+
+input[id="5"]:checked~.slider-nav .item-nav[for="5"] {
+    background: rgb(29, 1, 1);
+}
+
+input[id="6"]:checked~.slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 5), 0, 0);
+}
+
+input[id="6"]:checked~.slider-nav .item-nav[for="6"] {
+    background: rgb(29, 1, 1);
+}
+
+input[id="7"]:checked~.slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 6), 0, 0);
+}
+
+input[id="7"]:checked~.slider-nav .item-nav[for="7"] {
+    background: rgb(29, 1, 1);
+}
+
+input[id="8"]:checked~.slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 7), 0, 0);
+}
+
+input[id="8"]:checked~.slider-nav .item-nav[for="8"] {
+    background: rgb(29, 1, 1);
+}
+
+input[id="9"]:checked~.slide {
+    animation: none;
+    transform: translate3d(calc(-100% * 8), 0, 0);
+}
+
+input[id="9"]:checked~.slider-nav .item-nav[for="9"] {
+    background: rgb(29, 1, 1);
+}
+
+@keyframes autoplay {
+    0% {
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+
+    12.5% {
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+
+    25% {
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+
+    37.5% {
+        transform: translate3d(calc(-100% * 3), 0, 0);
+    }
+
+    50% {
+        transform: translate3d(calc(-100% * 4), 0, 0);
+    }
+
+    62.5% {
+        transform: translate3d(calc(-100% * 5), 0, 0);
+    }
+
+    75% {
+        transform: translate3d(calc(-100% * 6), 0, 0);
+    }
+
+    87.5% {
+        transform: translate3d(calc(-100% * 7), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(calc(-100% * 8), 0, 0);
+    }
+
+}
+
 /* MAIN = PEDIDOS */
 .pedidos-head {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -455,18 +705,18 @@ nav div {
 }
 
 .card5 .card-head {
-    background-image: url(../img/webp/carta/nuggets-pollo-salsa-redi.webp);
+    background-image: url(../img/webp/carta/nuggets-pollo-salsa.webp);
 }
 
 .card6 .card-head {
-    background-image: url(../img/webp/carta/papas-fritas-dupla-redi.webp);
+    background-image: url(../img/webp/carta/papas-fritas-dupla.webp);
 }
 
 /* MAIN = RESERVA */
 .reserva-head {
     width: 100%;
     height: 50vh;
-    background-image: url(../img/webp/lugar/barra-redi.webp);
+    background-image: url(../img/webp/lugar/barra.webp);
     background-size: cover;
     background-position: center;
 }
@@ -513,6 +763,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 input[type="time"]::-webkit-calendar-picker-indicator {
     font-size: 1.3rem;
 }
+
 input[type="date"]::-webkit-calendar-picker-indicator:hover,
 input[type="time"]::-webkit-calendar-picker-indicator:hover {
     cursor: pointer;
@@ -534,6 +785,15 @@ textarea {
 }
 
 /* MAIN = PROTOCOLO */
+.protocolo-img-bg {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-image: url(../img/webp/slider_1366x768/img-001-barra.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+}
 
 /* FOOTER */
 .gb-footer {
@@ -634,6 +894,7 @@ form button:active {
 
 /* MEDIA QUERYS */
 @media (max-width: 640px) {
+
     /* Header */
     .header {
         width: 100%;
@@ -657,7 +918,7 @@ form button:active {
         padding-left: 1.5rem;
         cursor: pointer;
         z-index: 1;
-        background-color: rgba(0,0,0);
+        background-color: rgba(0, 0, 0);
     }
 
     .navbar {
@@ -702,6 +963,23 @@ form button:active {
         display: none;
     }
 
+    /* MAIN */
+    /* Login + Protocolo */
+    .protocolo-form,
+    .signup-form,
+    .login-form {
+        width: 90%;
+        background-color: rgba(0, 0, 0, 0.95);
+        border-radius: 1rem;
+        box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    }
+
+    .protocolo-form {
+        background-color: rgba(32, 2, 2, 0.95);
+    }
+    .protocolo-form h3 {
+        font-size: 1.6rem;
+    }
     /* main - pedidos */
     .animate-title {
         font-size: 5rem;
@@ -754,29 +1032,35 @@ form button:active {
         height: 90%;
         margin: 1rem;
     }
+
     .sociales {
         justify-content: center;
     }
+
     .sociales a {
         padding: 0 2rem;
         margin-top: 3rem;
         font-size: 1.5rem;
     }
+
     .datos,
     .suscripcion {
         font-size: 1rem;
     }
+
     .title {
         margin: 0;
         font-size: 1.5rem;
         padding-bottom: 1rem;
     }
+
     .suscripcion button {
         margin-top: 1rem;
     }
 }
 
 @media (min-width: 640px) and (max-width: 1280px) {
+
     /* Header */
     .header {
         width: 100%;
@@ -799,7 +1083,7 @@ form button:active {
         padding-left: 1.5rem;
         cursor: pointer;
         z-index: 2;
-        background-color: rgba(0,0,0);
+        background-color: rgba(0, 0, 0);
     }
 
     .navbar {
@@ -843,6 +1127,26 @@ form button:active {
     .redes {
         display: none;
     }
+
+    /* MAIN */
+    /* Login + Protocolo */
+    .protocolo-form,
+    .signup-form,
+    .login-form {
+        width: 60%;
+        background-color: rgba(0, 0, 0, 0.95);
+        border-radius: 1rem;
+        box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    }
+
+    .protocolo-form {
+        background-color: rgba(32, 2, 2, 0.95);
+    }
+
+    .protocolo-form h3 {
+        font-size: 2rem;
+    }
+
     /* Footer */
     .gb-footer {
         height: auto;
@@ -862,23 +1166,28 @@ form button:active {
         height: 90%;
         margin: 1rem;
     }
+
     .sociales {
         justify-content: center;
     }
+
     .sociales a {
         padding: 0 2rem;
         margin-top: 3rem;
         font-size: 1.5rem;
     }
+
     .datos,
     .suscripcion {
         font-size: 1rem;
     }
+
     .title {
         margin: 0;
         font-size: 1.5rem;
         padding-bottom: 1rem;
     }
+
     .suscripcion button {
         margin-top: 1rem;
     }

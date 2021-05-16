@@ -80,7 +80,28 @@
     </header>
     <!-- MAIN -->
     <main class="gb-main">
-
+        <div class="protocolo-img-bg">
+        </div>
+        <div class="contenedor-protocolo flex jc-center ai-center c-999">
+            <form action="login.php" method="POST" class="protocolo-form h-100vh flex column ai-center jc-center teko">
+                <h3 class="uppercase fs-3">formulario de protocolo covid-19</h3>
+                <div class="w-80">
+                    <label for="cliente"></label>
+                    <input type="text" name="cliente" id="cliente" class="w-100 m-05 p-05 c-white bg-t bb-2sw fs-2"
+                        placeholder="Nombre completo" required>
+                    <label for="tel"></label>
+                    <input type="tel" name="tel" id="tel" class="w-100 m-05 p-05 c-white bg-t bb-2sw fs-2"
+                    placeholder="Telefono de contacto" required>
+                    <label for="localidad"></label>
+                    <input type="text" name="localidad" id="localidad" class="w-100 m-05 p-05 c-white bg-t bb-2sw fs-2"
+                        placeholder="Localidad" required>
+                    <label for="date"></label>
+                    <input type="date" name="date" id="date" class="w-100 m-05 p-05 c-999 bg-t bb-2sw fs-2" required>
+                </div>
+                
+                <button type="submit" class="w-80 fs-1-5 m-05 p-05 bg-black login-btn">enviar</button>
+            </form>
+        </div>
     </main>
     <!-- FOOTER -->
     <footer id="footer" class="gb-footer bg-black flex column">
