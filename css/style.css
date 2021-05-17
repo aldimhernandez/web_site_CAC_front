@@ -979,6 +979,7 @@ form button:active {
     .protocolo-form,
     .signup-form,
     .login-form {
+        width: 90%;
         padding: 2rem 0;
     }
 
@@ -1016,6 +1017,9 @@ form button:active {
     }
 
     /* main - reserva */
+    .title-reserva {
+        font-size: 2rem;
+    }
     .formulario-reserva {
         width: 90%;
     }
