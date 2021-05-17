@@ -972,10 +972,8 @@ form button:active {
 
     /* MAIN */
     /* MAIN = INDEX - NOSOTROS */
-    .gb-main {
-        padding-top: 2rem;
-    }
     .container-slide {
+        margin-top: 3rem;
         border-radius: 0;
     }
 
