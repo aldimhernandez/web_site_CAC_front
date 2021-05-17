@@ -368,6 +368,7 @@ img {
 
 .container-slide {
     position: relative;
+    top: 0;
     max-width: 70rem;
     width: 100%;
     border-radius: 1rem;
@@ -970,6 +971,14 @@ form button:active {
     }
 
     /* MAIN */
+    /* MAIN = INDEX - NOSOTROS */
+    .gb-main {
+        padding-top: 2rem;
+    }
+    .container-slide {
+        border-radius: 0;
+    }
+
     /* Login + Protocolo */
     .contenedor-signup,
     .contenedor-protocolo {
@@ -1020,6 +1029,7 @@ form button:active {
     .title-reserva {
         font-size: 2rem;
     }
+
     .formulario-reserva {
         width: 90%;
     }
@@ -1139,7 +1149,7 @@ form button:active {
         display: none;
     }
 
-        /* MAIN */
+    /* MAIN */
     /* Login + Protocolo */
     .contenedor-signup,
     .contenedor-protocolo {
@@ -1151,7 +1161,7 @@ form button:active {
     .login-form {
         padding: 2rem 0;
     }
-    
+
     .protocolo-form h3 {
         padding: 1rem;
         font-size: 1.6rem;
