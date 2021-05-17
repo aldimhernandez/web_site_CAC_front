@@ -151,7 +151,7 @@ a:hover,
     grid-area: main;
     width: 100%;
     height: auto;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 .gb-footer {
@@ -336,6 +336,8 @@ nav div {
     top: 20vh;
     z-index: 1;
 }
+
+.contenedor-signup,
 .contenedor-protocolo {
     width: 100%;
     height: auto;
@@ -408,8 +410,8 @@ img {
     flex-direction: column;
     align-items: center;
     border: 1px solid #111;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
@@ -896,6 +898,10 @@ form button:active {
 @media (max-width: 640px) {
 
     /* Header */
+    .gb-header {
+        min-height: 10vh;
+    }
+
     .header {
         width: 100%;
         justify-content: flex-start;
@@ -965,21 +971,22 @@ form button:active {
 
     /* MAIN */
     /* Login + Protocolo */
+    .contenedor-signup,
+    .contenedor-protocolo {
+        top: 10vh;
+    }
+
     .protocolo-form,
     .signup-form,
     .login-form {
-        width: 90%;
-        background-color: rgba(0, 0, 0, 0.95);
-        border-radius: 1rem;
-        box-shadow: 5px 5px 20px rgb(0, 0, 0);
+        padding: 2rem 0;
     }
 
-    .protocolo-form {
-        background-color: rgba(32, 2, 2, 0.95);
-    }
     .protocolo-form h3 {
+        padding: 1rem;
         font-size: 1.6rem;
     }
+
     /* main - pedidos */
     .animate-title {
         font-size: 5rem;
@@ -1128,19 +1135,22 @@ form button:active {
         display: none;
     }
 
-    /* MAIN */
+        /* MAIN */
     /* Login + Protocolo */
+    .contenedor-signup,
+    .contenedor-protocolo {
+        top: 10vh;
+    }
+
     .protocolo-form,
     .signup-form,
     .login-form {
-        width: 60%;
-        background-color: rgba(0, 0, 0, 0.95);
-        border-radius: 1rem;
-        box-shadow: 5px 5px 20px rgb(0, 0, 0);
+        padding: 2rem 0;
     }
-
-    .protocolo-form {
-        background-color: rgba(32, 2, 2, 0.95);
+    
+    .protocolo-form h3 {
+        padding: 1rem;
+        font-size: 1.6rem;
     }
 
     .protocolo-form h3 {
