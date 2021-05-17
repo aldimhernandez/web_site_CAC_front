@@ -239,7 +239,7 @@ a:hover,
     position: relative;
 }
 
-.login button {
+.login a {
     margin: 1rem 1rem 0 0;
     border: none;
     border-radius: 1rem;
@@ -248,12 +248,12 @@ a:hover,
     z-index: 2;
 }
 
-.login button:hover {
+.login a:hover {
     color: #FFF;
     background-color: #222;
 }
 
-.login button:active {
+.login a:active {
     background-color: rgb(19, 4, 1);
 }
 
