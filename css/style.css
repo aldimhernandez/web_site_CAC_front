@@ -341,15 +341,7 @@ nav div {
     background-repeat: repeat;
 }
 
-.contenedor-login {
-    width: 100%;
-    max-height: 100vh;
-    height: auto;
-    position: fixed;
-    top: 20vh;
-    z-index: 1;
-}
-
+.contenedor-login,
 .contenedor-signup,
 .contenedor-protocolo {
     width: 100%;
@@ -1029,6 +1021,7 @@ form button:active {
     }
 
     /* Login + Protocolo */
+    .contenedor-login,
     .contenedor-signup,
     .contenedor-protocolo {
         top: 10vh;
