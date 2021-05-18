@@ -42,7 +42,9 @@ a:hover,
     color: #FFF;
     text-decoration: none;
 }
-
+.bold {
+    font-weight: ;
+}
 .c-white {
     color: #FFF;
 }
@@ -326,6 +328,7 @@ nav div {
 .login-img-bg {
     width: 100%;
     height: 100vh;
+    min-height: 100%;
     background-image: url(../img/webp/lugar/patio01.webp);
     background-position: center;
     background-size: cover;
@@ -335,6 +338,7 @@ nav div {
 .signup-img-bg {
     width: 100%;
     height: 100vh;
+    min-height: 100%;
     background-image: url(../img/webp/lugar/puerta.webp);
     background-position: center;
     background-size: cover;
@@ -356,13 +360,15 @@ nav div {
 .signup-form,
 .login-form {
     width: 50%;
+    height: auto;
+    padding: 2rem 0;
     background-color: rgba(0, 0, 0, 0.95);
     border-radius: 1rem;
     box-shadow: 5px 5px 20px rgb(0, 0, 0);
 }
 
 .protocolo-form {
-    padding: 2rem 0;
+    margin: 2rem 0;
     background-color: rgba(32, 2, 2, 0.95);
 }
 
@@ -655,11 +661,14 @@ input[id="9"]:checked~.slider-nav .item-nav[for="9"] {
     cursor: pointer;
 }
 
-.seccion h5 {
+.seccion {
+    width: 100%;
+}
+
+.h5-subir {
     width: 100%;
     color: #FFF;
     padding: 1rem;
-    font-size: 3rem;
     letter-spacing: 0.12rem;
     background-color: rgb(15, 1, 1);
     text-transform: uppercase;
@@ -702,7 +711,16 @@ input[id="9"]:checked~.slider-nav .item-nav[for="9"] {
     height: 9rem;
     margin: 1rem 1rem 0 1rem;
 }
-
+.card-main-beer {
+    grid-area: card-main;
+    height: 12rem;
+    padding: 1rem 0;
+}
+.alcohol .top,
+.ibu .top,
+.amargor .top {
+    font-size: 1rem;
+}
 .card-main h6 {
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -735,30 +753,78 @@ input[id="9"]:checked~.slider-nav .item-nav[for="9"] {
 }
 
 /* Aca necesitaria usar un ciclo for de JS */
+/* wok */
 .card1 .card-head {
     background-image: url(../img/webp/cards_240x140/wok-verduras-pollo.webp);
 }
-
+/* pollo al curry */
 .card2 .card-head {
     background-image: url(../img/webp/cards_240x140/pollo-curry.webp);
 }
-
+/* provo */
 .card3 .card-head {
     background-image: url(../img/webp/cards_240x140/provoleta.webp);
 }
-
+/* tablita campera */
 .card4 .card-head {
     background-image: url(../img/webp/cards_240x140/tablita-campera.webp);
 }
-
+/* nuggets */
 .card5 .card-head {
     background-image: url(../img/webp/cards_240x140/nuggets-pollo.webp);
 }
-
+/* papas rusticas */
 .card6 .card-head {
     background-image: url(../img/webp/cards_240x140/papas-rusticas.webp);
 }
-
+/* mila napo */
+.card7 .card-head {
+    background-image: url(../img/webp/cards_240x140/mila-napo.webp);
+}
+/* ravioles */
+.card8 .card-head {
+    background-image: url(../img/webp/cards_240x140/pastas-ravioles.webp);
+}
+/* ñoquis */
+.card9 .card-head {
+    background-image: url(../img/webp/cards_240x140/pastas-ñoquis.webp);
+}
+/* blonde */
+.card10 .card-head {
+    background-image: url(../img/webp/cards_240x140/beers/blonde.webp);
+}
+/* trigo */
+.card11 .card-head {
+    background-image: url(../img/webp/cards_240x140/beers/trigo.webp);
+}
+/* ipa */
+.card12 .card-head {
+    background-image: url(../img/webp/cards_240x140/beers/ipa.webp);
+}
+/* stout */
+.card13 .card-head {
+    background-image: url(../img/webp/cards_240x140/beers/stout.webp);
+}
+/* honey */
+.card14 .card-head {
+    background-image: url(../img/webp/cards_240x140/beers/honey.webp);
+}
+/* apa */
+.card15 .card-head {
+    background-image: url(../img/webp/cards_240x140/beers/apa.webp);
+}
+/* gaseosa */
+.card16 .card-head {
+    background-image: url(../img/webp/cards_240x140/sin-alcohol/gaseosa.jpg);
+}
+/* limonada */
+.card17 .card-head {
+    background-image: url(../img/webp/cards_240x140/sin-alcohol/unnamed.webp);
+}
+/* agua */
+.card18 .card-head {
+    background-image: url(../img/webp/cards_240x140/sin-alcohol/agua.gif);
+}
 /* MAIN = RESERVA */
 .reserva-head {
     width: 100%;
@@ -834,7 +900,7 @@ textarea {
 /* MAIN = PROTOCOLO */
 .protocolo-img-bg {
     width: 100%;
-    min-height: 100vh;
+    min-height: 110vh;
     height: auto;
     background-image: url(../img/webp/slider_1366x768/img-001-barra.webp);
     background-position: center;
@@ -1030,7 +1096,7 @@ form button:active {
     .protocolo-form,
     .signup-form,
     .login-form {
-        width: 90%;
+        width: 90%;      
         padding: 2rem 0;
     }
 
