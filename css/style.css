@@ -119,6 +119,10 @@ a:hover,
 }
 
 /* Width Percent */
+.w-30 {
+    width: 30%;
+}
+
 .w-50 {
     width: 50%;
 }
@@ -709,6 +713,15 @@ input[id="9"]:checked~.slider-nav .item-nav[for="9"] {
     text-transform: uppercase;
 }
 
+.continuar-pedido {
+    border-radius: 5rem;
+    border: none;
+    padding: 0.5rem 2rem;
+    background-color: rgb(53, 5, 5);
+}
+.pedidos-detalles {
+    padding: 1rem 0;
+}
 .cards {
     width: 20%;
     min-width: 15rem;
@@ -1031,18 +1044,18 @@ form button {
     outline: none;
 }
 
-
 form button {
-    border-radius: 1rem;
     letter-spacing: 0.2rem;
     background-color: #111;
     text-transform: uppercase;
 }
 
+.continuar-pedido:hover,
 form button:hover {
     background-color: #222;
 }
 
+.continuar-pedido:active,
 form button:active {
     background-color: rgb(19, 4, 1);
 }
