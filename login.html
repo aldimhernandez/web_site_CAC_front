@@ -83,15 +83,46 @@
                 <h3 class="uppercase fs-3 m-0">bienvenido</h3>
                 <div class="user w-60">
                     <label for="user"></label>
-                    <input type="text" name="user" id="user" class="w-100 m-05 p-05 c-white bg-t bb-2sw fs-2"
+                    <input type="text" name="user" id="user" class="w-100 m-05 p-05 c-white bg-t bb-2sw fs-2" minlength="5" maxlength="20"
                         placeholder="Nombre de usuario" required>
                 </div>
                 <div class="pass w-60">
                     <label for="pass"></label>
                     <input type="password" name="pass" id="pass" class="w-100 m-05 p-05 c-white bg-t bb-2sw fs-2"
+                        maxlength="20" min="5"
                         placeholder="Contraseña" required>
                 </div>
-                <button type="submit" class="w-60 fs-1-5 m-05 p-05 bg-black login-btn">inicia sesión</button>
+                <!-- COMPONENTE DE BOOTSTRAP -->
+                <!-- <button type="submit" class="w-60 fs-1-5 m-05 p-05 bg-black login-btn">inicia sesión</button> -->
+                <!-- Button trigger modal -->
+                <button type="submit" class="w-60 fs-1-5 m-05 p-05 bg-black login-btn" data-toggle="modal" data-target="#exampleModal">
+                    inicia sesión
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade verdana" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-black">
+                                <h5 class="modal-title uppercase c-white fs-1-5" id="exampleModalLabel">
+                                    ¡has iniciado sesión con éxito!
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body bg-white c-black fs-1-2">
+                                ¿Deseas recordar el nombre de usuario y la contraseña?
+
+                            </div>
+                            <div class="modal-footer bg-black">
+                                <button type="button" class="btn btn-secondary uppercase" data-dismiss="modal">no, gracias</button>
+                                <button type="button" class="btn btn-info uppercase">recordar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
     </main>
