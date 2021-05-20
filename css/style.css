@@ -18,6 +18,7 @@ body {
     z-index: 0;
 }
 
+/* Font Family */
 @font-face {
     font-family: Teko;
     src: url(../fonts/Teko/Teko-Light.ttf);
@@ -30,14 +31,18 @@ body {
 .verdana {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .sui-light {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 200;
 }
+
+/* text-transforme */
 .uppercase {
     text-transform: uppercase;
 }
 
+/* Anchors y Buttons */
 a,
 button {
     color: inherit;
@@ -50,10 +55,7 @@ a:hover,
     text-decoration: none;
 }
 
-.bold {
-    font-weight: ;
-}
-
+/* Colors */
 .c-white {
     color: #FFF;
 }
@@ -66,6 +68,7 @@ a:hover,
     color: #000;
 }
 
+/* Background´s Colors */
 .bb-2sw {
     border-bottom: 2px solid #FFF;
 }
@@ -86,6 +89,7 @@ a:hover,
     background-color: transparent;
 }
 
+/* Font Size */
 .fs-1 {
     font-size: 1rem;
 }
@@ -114,6 +118,7 @@ a:hover,
     font-size: 5rem;
 }
 
+/* Width Percent */
 .w-50 {
     width: 50%;
 }
@@ -134,6 +139,7 @@ a:hover,
     height: auto;
 }
 
+/* Viewport Width */
 .h-60vh {
     height: 60vh;
 }
@@ -150,6 +156,7 @@ a:hover,
     height: 20%;
 }
 
+/* Margin and Padding */
 .m-0 {
     margin: 0;
 }
@@ -182,7 +189,6 @@ a:hover,
     grid-area: main;
     width: 100%;
     height: auto;
-    /* min-height: 100vh; */
 }
 
 .gb-footer {
@@ -287,7 +293,6 @@ a:hover,
 }
 
 .navbar {
-    /* width: 100%; */
     padding: 2.5rem 0;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
@@ -474,6 +479,7 @@ img {
     transform: scale(1);
 }
 
+/* Aca necesitaria un ciclo for y arrays */
 input[id="1"]:checked~.slide {
     animation: none;
     transform: translate3d(0, 0, 0);
@@ -784,7 +790,7 @@ input[id="9"]:checked~.slider-nav .item-nav[for="9"] {
     font-weight: 500;
 }
 
-/* Aca necesitaria usar un ciclo for de JS */
+/* Aca necesitaria usar un ciclo for y un array de imagenes*/
 /* wok */
 .card1 .card-head {
     background-image: url(../img/webp/cards_240x140/wok-verduras-pollo.webp);
@@ -967,7 +973,6 @@ textarea {
 /* a-Subir (icono-enlace) */
 .subir {
     font-size: 2rem;
-    /* background-color: rgb(37, 37, 7); */
 }
 
 /* 2-FOOTER-center */
