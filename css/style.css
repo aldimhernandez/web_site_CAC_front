@@ -719,9 +719,11 @@ input[id="9"]:checked~.slider-nav .item-nav[for="9"] {
     padding: 0.5rem 2rem;
     background-color: rgb(53, 5, 5);
 }
+
 .pedidos-detalles {
     padding: 1rem 0;
 }
+
 .cards {
     width: 20%;
     min-width: 15rem;
@@ -1357,4 +1359,6 @@ form button:active {
     }
 }
 
-@media (min-width: 1280px) {}
+@media (min-width: 1280px) {
+
+}
