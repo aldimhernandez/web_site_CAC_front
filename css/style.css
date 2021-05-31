@@ -423,7 +423,7 @@ img {
     transform: translate3d(0, 0, 0);
     transition: all 0.6s;
     animation-name: autoplay;
-    animation-duration: 15s;
+    animation-duration: 60s;
     animation-direction: alternate;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
@@ -1050,6 +1050,7 @@ form button {
     letter-spacing: 0.2rem;
     background-color: #111;
     text-transform: uppercase;
+    border-radius: 1rem;
 }
 
 .continuar-pedido:hover,
@@ -1068,6 +1069,7 @@ form button:active {
     padding: 2rem 0;
     color: rgb(206, 205, 205);
     background-color: #000;
+    
 }
 
 /* a-Copyright */
@@ -1109,13 +1111,13 @@ form button:active {
 
     .navbar {
         position: fixed;
-        top: 4rem;
+        top: 3.5rem;
         padding: 0 1rem;
         width: 100%;
         height: auto;
         flex-direction: column;
         align-items: flex-start;
-        background-color: rgba(19, 1, 1, 0.7);
+        background-color: #000;
         z-index: 3;
         margin-left: -100%;
         transition: all 0.7s;
@@ -1267,7 +1269,7 @@ form button:active {
         height: auto;
         flex-direction: column;
         align-items: flex-start;
-        background-color: rgba(19, 1, 1, 0.7);
+        background-color: #000;
         z-index: 1;
         margin-left: -70%;
         transition: all 0.7s;
