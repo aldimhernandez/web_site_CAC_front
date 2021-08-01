@@ -883,7 +883,7 @@ input[id="9"]:checked~.slider-nav .item-nav[for="9"] {
 
 /* gaseosa */
 .card16 .card-head {
-    background-image: url(../img/webp/cards_240x140/sin-alcohol/gaseosa.jpg);
+    background-image: url(../img/webp/cards_240x140/sin-alcohol/gaseosa.webp);
 }
 
 /* limonada */
@@ -893,7 +893,7 @@ input[id="9"]:checked~.slider-nav .item-nav[for="9"] {
 
 /* agua */
 .card18 .card-head {
-    background-image: url(../img/webp/cards_240x140/sin-alcohol/agua.gif);
+    background-image: url(../img/webp/cards_240x140/sin-alcohol/agua.webp);
 }
 
 /* MAIN = RESERVA */
